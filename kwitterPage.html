@@ -14,28 +14,35 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
+
 <div class="container">
-	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+
 	<center>
-		<h1 class="header">	
+		<h1  class="header">	
 			Kwitter	
 			<sup>
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<div style="text-align: left;margin-bottom: 70px;"> </div>
+		
+		<div id="output"></div>
+		
 	</center>
 </div>
-
 <center>
-	<div class="inputDivMessagePage">
-		<label>Enviar:</label>
-		<button class="btn btn-success">Envair</button>
-	</div>
+    <div class="input_div_message_page">
+        <label>enviar:</label>
+        <input type="text" id="msg" class="form-control" placeholder="digite sua mensagem">
+        <button onclick="send()" class="btn btn-success">Enviar</button>
+    
+    </div>
 </center>
+
 
 <script src="kwitterPage.js"></script>
 </body>
